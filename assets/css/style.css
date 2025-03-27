@@ -1,0 +1,225 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Google Sans";
+  color: #1f2833;
+  font-size: 17px;
+  font-style: normal;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-widht: 1020px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Decore {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.TopNav {
+  padding: 50px 0;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+header .Nav-items {
+  margin-left: 650px;
+  gap: 55px;
+}
+
+header .Nav-items,
+header .Nav-item-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .Nav-item-right {
+  align-items: center;
+  gap: 30px;
+  margin-left: 100px;
+}
+
+header .Nav-items a {
+  font-weight: 500;
+}
+
+header .Nav-item-right a {
+  font-weight: 700;
+}
+
+header .Nav-item-right .Signup {
+  width: 102px;
+  height: 40px;
+  font-weight: 700;
+  border-radius: 4px;
+  border-color: #1f2833;
+  background: none;
+}
+
+header .Nav-item-right select {
+  border: none;
+  background: none;
+  font-weight: 600;
+}
+
+header .HeroContent {
+  display: flex;
+  margin: 0 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+header .HeroContent .Description {
+  margin: 0 55px;
+}
+
+header .Description .Pre-title {
+  color: #f06048;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+header .Description h1 {
+  color: #161e4e;
+  font-size: 124px;
+  font-weight: 700;
+  letter-spacing: -3.36px;
+  word-wrap: break-word;
+  padding: 20px 0;
+}
+
+header .Description p {
+  color: #5d6285;
+  font-size: 16px;
+  font-weight: 500;
+  word-wrap: break-word;
+  width: 500px;
+}
+
+header .Description .More {
+  display: flex;
+  gap: 44px;
+  padding: 35px 0;
+  align-items: center;
+}
+
+header .Description .More button {
+  width: 170px;
+  height: 60px;
+  border-radius: 10px;
+  background: #fea100;
+  border: none;
+  font-family: 18px;
+  color: white;
+  font-weight: 700;
+}
+
+header .Description .More .Play {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+header .Description .More span {
+  color: var(#676d78);
+  font-family: Poppins;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+section {
+  top: 100px;
+  display: block;
+  gap: 100px;
+  justify-content: center;
+  justify-items: center;
+  padding: 100px 0;
+}
+
+section .ServiceContent {
+  display: block;
+  justify-items: center;
+}
+
+section .ServiceContent h5 {
+  color: #5d6285;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+section .ServiceContent h1 {
+        color: #131840;
+        font-size: 70px;
+        font-weight: 700;
+        text-transform: capitalize;
+        margin: 20px 0;
+      }
+
+section .ServiceContent .Categories {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+
+section .ServiceContent .Categories .Category {
+  display: block;
+  justify-items: center;
+  align-content: center;
+  width: 267px;
+  height: 267px;
+  border-radius: 36px;
+  padding: 20px ;
+  }
+
+section .ServiceContent .active{
+        background-color: #fafafa;
+}
+
+section .ServiceContent .Categories .Category h4 {
+  padding: 30px 0;
+  color: #1e1d4f;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+section .ServiceContent .Categories .Category p {
+  text-align: center;
+  color: #5d6285;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 65px;
+}
