@@ -8,21 +8,23 @@
 }
 
 @media screen and (max-width: 480px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
+  body {
+    top: 0;
+    /* pas encore definie */
   }
 }
 
 @media screen and (min-width: 481px) and (max-widht: 1020px) {
-  .container {
-    flex-direction: column;
+  body {
+    top: 0;
+    /* pas encore definie */
   }
 }
 
 @media screen and (min-width: 1025px) {
-  .container {
-    flex-direction: row;
+ body {
+    top: 0;
+    /* pas encore definie */
   }
 }
 
@@ -164,7 +166,7 @@ section {
   gap: 100px;
   justify-content: center;
   justify-items: center;
-  padding-top: 100px;
+  padding: 100;
 }
 
 #Services .ServiceContent .Sharps {
