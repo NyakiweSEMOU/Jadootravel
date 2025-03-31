@@ -162,11 +162,11 @@ header .Description .More span {
 
 section {
   top: 100px;
-  display: block;
+  display: flex;
+  flex-direction: column;
   gap: 100px;
-  justify-content: center;
-  justify-items: center;
-  padding: 100;
+align-items: center;
+  padding: 100px;
 }
 
 #Services .ServiceContent .Sharps {
@@ -175,8 +175,9 @@ section {
   z-index: -1;
 }
 #Services .ServiceContent {
-  display: block;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+align-items: center;
   position: relative;
   padding: 50px 0;
 }
@@ -204,13 +205,14 @@ section {
 }
 
 #Services .ServiceContent .Categories .Category {
-  display: block;
-  justify-items: center;
-  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 267px;
   height: 267px;
   border-radius: 36px;
   padding: 20px;
+  position: relative;
 }
 
 #Services .ServiceContent .Categories .Category:hover {
@@ -240,7 +242,8 @@ section {
 #Services .Categories .Category .Sharprectangle {
   position: absolute;
   z-index: -1;
-  margin-top: 25px;
+  bottom: -45px;
+  left: -20px;
 }
 
 #Destinations {
