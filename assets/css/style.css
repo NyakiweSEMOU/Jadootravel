@@ -1,31 +1,70 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "Google Sans";
+  font-family: "Nohemi", "Google sans";
   color: #1f2833;
   font-size: 17px;
   font-style: normal;
 }
 
-@media screen and (max-width: 480px) {
-  body {
-    top: 0;
-    /* pas encore definie */
-  }
-}
+@media screen and (max-width: 1200px) {
 
-@media screen and (min-width: 481px) and (max-widht: 1020px) {
-  body {
-    top: 0;
-    /* pas encore definie */
+  body{
+    overflow: 0;
   }
-}
 
-@media screen and (min-width: 1025px) {
- body {
-    top: 0;
-    /* pas encore definie */
+  #Hero h1{
+    color: #161e4e;
+    font-size: 70px;
+ 
   }
+
+  #Hero h1,
+  #Services .ServiceContent .H1,
+  #Destinations  .H1,
+  #BookAtrip .Content .H1,
+  #Testimonals .H1,
+  #Subscribe p{
+    color: #161e4e;
+    font-size: 40px;
+    font-weight: 700;
+    word-wrap: break-word;
+    text-align: center;
+  }
+
+  #Hero .TopNav,
+  #Hero .HeroContent,
+  #Hero .TopNav .Nav-items,
+  #Hero .Nav-item-right,
+  #Hero .HeroContent .Description,
+  #Services .Categories,
+  #Destinations .DestinationsList,
+  #BookAtrip,
+  #Testimonals,
+  #Logos,
+  #Subscribe .Description,
+  footer .Infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #Hero .TopNav .Nav-items,
+  #Hero .Nav-item-right,
+  footer .Infos {
+    margin: 0;
+    gap: 20px;
+  }
+
+  #Destinations,
+  #Testimonals,
+  #Subscribe
+ {
+    margin: 100px 0;
+  }
+
 }
 
 header {
@@ -165,7 +204,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 100px;
-align-items: center;
+  align-items: center;
   padding: 100px;
 }
 
@@ -177,7 +216,7 @@ align-items: center;
 #Services .ServiceContent {
   display: flex;
   flex-direction: column;
-align-items: center;
+  align-items: center;
   position: relative;
   padding: 50px 0;
 }
@@ -248,8 +287,9 @@ align-items: center;
 
 #Destinations {
   margin: 200px 0;
-  display: block;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
 }
 
@@ -618,7 +658,7 @@ footer .Infos .Social {
   align-items: center;
 }
 
-footer .Infos .Social .Links{
+footer .Infos .Social .Links {
   display: flex;
   gap: 20px;
   padding: 20px 0;
